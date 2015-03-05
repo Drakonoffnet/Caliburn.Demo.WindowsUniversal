@@ -103,9 +103,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -116,6 +113,7 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="demo.Windows_TemporaryKey.pfx" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Logo.scale-100.png" />
@@ -128,6 +126,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Caliburn.Micro">
+      <HintPath>..\..\packages\Caliburn.Micro.Core.2.0.1\lib\portable-net45+win8+wp8+wpa81\Caliburn.Micro.dll</HintPath>
+    </Reference>
+    <Reference Include="Caliburn.Micro.Extensions">
+      <HintPath>..\..\packages\Caliburn.Micro.2.0.1\lib\win81\Caliburn.Micro.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Caliburn.Micro.Platform">
+      <HintPath>..\..\packages\Caliburn.Micro.2.0.1\lib\win81\Caliburn.Micro.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Interactions">
+      <HintPath>..\..\packages\Caliburn.Micro.2.0.1\lib\win81\Microsoft.Xaml.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Interactivity">
+      <HintPath>..\..\packages\Caliburn.Micro.2.0.1\lib\win81\Microsoft.Xaml.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.8\lib\netcore45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

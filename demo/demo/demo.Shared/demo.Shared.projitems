@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -15,5 +15,27 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NavigationExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\AgeLimitToTextConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\BooleanToOppositeVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\DurationToTextConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\EmptyListVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\EmptyNullTextToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\IMDbToTextConvertor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\IntToOppositeVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\IntToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\ItemCountToEmptyLabelVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\KinopoiskToTextConvertor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\ShortestTitleConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\ShortTitleConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\SvodToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\ToLowerTextConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\ToUpperTextConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\TvodToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\VodToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\YearToTextConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AppBasePageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPageViewModel.cs" />
   </ItemGroup>
 </Project>
